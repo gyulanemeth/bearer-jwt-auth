@@ -1,0 +1,57 @@
+{
+  "name": "bearer-jwt-auth",
+  "version": "1.0.0",
+  "description": "Bearer JWT authorization.",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "lint": "npx standard",
+    "lint-fix": "npx standard --fix",
+    "test": "npm run lint && node --experimental-vm-modules node_modules/jest/bin/jest.js --collect-coverage",
+    "test-brk": "node --inspect-brk --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gyulanemeth/bearer-jwt-auth.git"
+  },
+  "keywords": [
+    "bearer",
+    "jwt",
+    "auth",
+    "authorization",
+    "jsonwebtoken"
+  ],
+  "bugs": {
+    "url": "https://github.com/gyulanemeth/bearer-jwt-auth/issues"
+  },
+  "homepage": "https://github.com/gyulanemeth/bearer-jwt-auth#readme",
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  },
+  "jest": {
+    "testEnvironment": "jest-environment-node",
+    "transform": {},
+    "verbose": true,
+    "testTimeout": 5000,
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    }
+  },
+  "dependencies": {
+    "jsonwebtoken": "^8.5.1",
+    "standard-api-errors": "^0.0.2"
+  },
+  "devDependencies": {
+    "jest": "^28.1.0",
+    "standard": "^17.0.0"
+  },
+  "author": "GYN",
+  "license": "MIT"
+}
