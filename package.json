@@ -1,6 +1,6 @@
 {
   "name": "bearer-jwt-auth",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Bearer JWT authorization.",
   "type": "module",
   "main": "src/index.js",
@@ -45,7 +45,7 @@
     }
   },
   "dependencies": {
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.1",
     "standard-api-errors": "^0.0.2"
   },
   "devDependencies": {
